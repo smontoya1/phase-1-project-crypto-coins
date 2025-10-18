@@ -1,0 +1,75 @@
+/* General resets */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f5f6fa;
+  color: #333;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Controls */
+section {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input, select {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+/* Crypto list container */
+#crypto-list {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Each coin row */
+#crypto-list div {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+#crypto-list div:last-child {
+  border-bottom: none;
+}
+
+/* Highlight gainers/losers */
+.pos {
+  color: green;
+  font-weight: bold;
+}
+
+.neg {
+  color: red;
+  font-weight: bold;
+}
+
+.coin-image {
+  width: 50px;      /* thumbnail width */
+  height: auto;      /* keep aspect ratio */
+  border: 1px solid #ccc;  /* light border around */
+  border-radius: 6px;      /* slightly rounded corners */
+  object-fit: cover;       /* crop if needed to fit */
+  display: block;          /* prevents inline spacing issues */
+}
+

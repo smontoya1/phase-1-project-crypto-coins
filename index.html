@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crypto Top 10</title>
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Crypto Top 25</h1>
+
+    <!-- Controls -->
+        <section>
+            <fieldset id="view-controls">
+                <legend>View</legend>
+                <label>
+                    <input type="radio" name="view" value="mcap" checked> Top Market Cap
+                </label>
+                <label>
+                    <input type="radio" name="view" value="movers"> Gainers/Losers
+                </label>
+            </fieldset>
+
+            <label>
+                Direction:
+                <select id="direction-select">
+                    <option value="gainers">Gainers</option>
+                    <option value="losers">Losers</option>
+                </select>
+            </label>
+
+            <label>
+                Search:
+                <input type="text" id="search" placeholder="Search by name or symbol...">
+            </label>
+        </section>
+
+        <!-- Display -->
+        <section id="crypto-list"></section>
+    </body>
+</html>
