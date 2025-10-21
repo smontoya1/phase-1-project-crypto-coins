@@ -130,6 +130,7 @@ const CoinMethods = {
         console.log("View has been successfully updated!")
     }
 };
+    
 
 // Event Listeners
 
@@ -152,6 +153,11 @@ document.querySelector("#search").addEventListener("input", (e) => {
     console.log("User is searching for '"+e.target.value+"'...")
     state.search = e.target.value;
     CoinMethods.update();
+});
+
+document.querySelector("#refresh-btn").addEventListener("click", () => {
+  console.log("Refreshing data...");
+  CoinMethods.getCoins();
 });
 
 // initial fetch
